@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .cavImg{
+        display: none;
+    }
+    canvas{
+        background: #ccc;
+        background-size: 100% 100%;
+    }
+</style>
+<body>
+    <img id="bg_img" class="cavImg" src="../img/vipDayV/lzz_logo.png" alt="">
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+        (function(){
+            var dom = document.getElementById('myCanvas'),
+                    ctx = dom.getContext('2d');
+
+            ctx.canvas.width = document.body.clientWidth;
+            var width = ctx.canvas.width;
+            var rem = width/200;
+            ctx.canvas.height = 300*rem;
+            var height = ctx.canvas.height;
+            var flower = [];
+            var startPoint = [];
+            var timer;
+            var img = document.getElementById('bg_img');
+            img.onload = function()
+            {
+                var drawImg = new drawAnimate();
+                drawImg.init();
+            }
+
+            var drawAnimate = function () {
+            }
+            drawAnimate.prototype = {
+                init:function(){
+                    var that = this, yStart, yMove, isMove = false;
+                    dom.addEventListener('touchstart',function (event){
+                        isMove = false;
+                        yMove = 0;
+                        yStart = event.touches[0].clientY;
+                    });
+                    dom.addEventListener('touchmove',function (event){
+                        event.preventDefault();
+                        yMove = event.touches[0].clientY;
+                        isMove = (yMove-yStart)<0?true : false;
+                    })
+                    dom.addEventListener('touchend',function(){
+                        if(isMove) {
+                            var startPointX = {
+                                xStart: Math.random() * (width - 100) + 50,
+                                yStart: Math.random() * 50
+                            };
+                            var flowerx = {
+                                speedX: 0,
+                                speedY: -1,
+                                aX: Math.random() * 0.02 - 0.01,
+                                aY: -0.1,
+                                sX: 0,
+                                sY: 0
+                            }
+                            startPoint.push(startPointX);
+                            flower.push(flowerx);
+
+                            clearInterval(timer);
+                            timer = setInterval(function () {
+                                that.flowerAnimate(startPoint, flower);
+                            }, 33)
+                        }
+                    })
+                },
+                flowerAnimate:function(startPoint,flower){
+                    ctx.clearRect(0,0,width,height);
+                    for(var i=0;i<flower.length;i++){
+                        flower[i].speedY += flower[i].aY;
+                        flower[i].sY += flower[i].speedY;
+                        flower[i].speedX += flower[i].aX;
+                        flower[i].sX += flower[i].speedX;
+                        ctx.drawImage(img,startPoint[i].xStart+flower[i].sX,200*rem+startPoint[i].yStart+flower[i].sY,40,40);
+                    }
+//                        ctx.fillStyle = "rgba(255, 255, 255, 0.8)";
+//                        ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
+//                        ctx.lineWidth = '5';
+//                        ctx.beginPath();
+//                        ctx.moveTo(sX, sY);
+//                        ctx.arc(sX+200, sY+400, 5, 0, Math.PI*2, true);
+//                        ctx.fill();
+//                        ctx.stroke();
+                }
+            }
+        })()
+    </script>
+</body>
+</html>

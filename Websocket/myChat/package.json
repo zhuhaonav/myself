@@ -1,0 +1,17 @@
+{
+  "name": "mychat",
+  "version": "1.0.0",
+  "description": "a chat program",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "socket.io": "^1.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "author": "zhuhao",
+  "license": "ISC"
+}

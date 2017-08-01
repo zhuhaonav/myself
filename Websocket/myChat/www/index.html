@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="hichat | a simple chat application built with node.js and websocket">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+    <div class="banner">
+        <h1>MyChat</h1>
+        <span id="status"></span>
+    </div>
+    <div id="historyMsg">
+    </div>
+    <div class="controls" >
+        <div class="items">
+            <input id="colorStyle" type="color" placeHolder='#333' title="font color" />
+            <input id="emoji" type="button" value="表情" title="emoji" />
+
+            <input id="clearBtn" type="button" value="clear" title="clear screen" />
+        </div>
+        <textarea id="messageInput" placeHolder="enter to send"></textarea>
+        <input id="sendBtn" type="button" value="发送">
+        <div id="emojiWrapper">
+        </div>
+    </div>
+</div>
+<div id="loginWrapper">
+    <p id="info">connecting to server...</p>
+    <div id="nickWrapper">
+        <input type="text" placeHolder="nickname" id="nicknameInput" />
+        <!--<input type="button" value="OK" id="loginBtn" />-->
+        <input id="loginBtn" type="button" value="login">
+    </div>
+</div>
+<!--<a href="./temps/vipDayVgame.html">cav</a>-->
+<script src="/socket.io/socket.io.js"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>
