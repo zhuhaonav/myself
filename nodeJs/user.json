@@ -1,0 +1,114 @@
+// {
+//   "user1" : {
+//     "name" : "mahesh",
+//     "password" : "password1",
+//     "profession" : "teacher",
+//     "id": 1
+//   },
+//   "user2" : {
+//     "name" : "suresh",
+//     "password" : "password2",
+//     "profession" : "librarian",
+//     "id": 2
+//   },
+//   "user3" : {
+//     "name" : "ramesh",
+//     "password" : "password3",
+//     "profession" : "clerk",
+//     "id": 3
+//   }
+// }
+{
+    "data": {
+        "currentCoinCount": 120,
+        "guessActivityList": [
+            {
+                "betmax": 1000,
+                "betmin": 0,
+                "betstoptime": "2017-07-08 11:11:32",
+                "centtime": "2017-07-07 09:27:51",
+                "guessRecordList": [
+                    {
+                        "betcoin": 20,
+                        "recordid": 15,
+                        "recordresultid": 18
+                    },
+                    {
+                        "betcoin": 20,
+                        "recordid": 16,
+                        "recordresultid": 17
+                    }
+                ],
+                "guesstitle": "测试",
+                "id": 17,
+                "imgurl": "",
+                "lotterydrawtime": "2017-07-09 11:11:32",
+                "resultConfigList": [
+                    {
+                        "betname": "A",
+                        "betodds": 1.2,
+                        "result": "",
+                        "resultid": 17,
+                        "totalcoins": 0,
+                        "totaltimes": 0
+                    },
+                    {
+                        "betname": "B",
+                        "betodds": 0.8,
+                        "result": "",
+                        "resultid": 18,
+                        "totalcoins": 0,
+                        "totaltimes": 0
+                    }
+                ],
+                "sendCoinDetailList": [
+                    {
+                        "detailid": 1,
+                        "detailrecordid": 15,
+                        "sendcoin": 0
+                    },
+                    {
+                        "detailid": 2,
+                        "detailrecordid": 16,
+                        "sendcoin": 0
+                    }
+                ],
+                "status": "1"
+            },
+            {
+                "betmax": 1000,
+                "betmin": 0,
+                "betstoptime": "2017-07-08 16:26:07",
+                "centtime": "2017-07-07 09:27:51",
+                "guessRecordList": [],
+                "guesstitle": "测试",
+                "id": 18,
+                "imgurl": "",
+                "lotterydrawtime": "2017-07-08 16:26:07",
+                "resultConfigList": [
+                    {
+                        "betname": "",
+                        "betodds": 1,
+                        "result": "",
+                        "resultid": 19,
+                        "totalcoins": 0,
+                        "totaltimes": 0
+                    },
+                    {
+                        "betname": "ew",
+                        "betodds": 0,
+                        "result": "",
+                        "resultid": 20,
+                        "totalcoins": 0,
+                        "totaltimes": 0
+                    }
+                ],
+                "sendCoinDetailList": [],
+                "status": "1"
+            }
+        ]
+    },
+    "hasSuccess": true,
+    "resultInfo": "success",
+    "success": "true"
+}

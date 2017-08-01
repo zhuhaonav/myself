@@ -1,0 +1,48 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<head>
+		<title>极地区域图</title>
+		<!--<script src="js/Chart.js"></script>-->
+		<!--<script src="js/Chart.min.js"></script>-->
+		<script src="js/Chart-1.0.1-beta.4.js"></script>
+		<script>
+			
+			var data = [
+				{
+					value : 30,
+					color: "#D97041"
+				},
+				{
+					value : 90,
+					color: "#C7604C"
+				},
+				{
+					value : 24,
+					color: "#21323D"
+				},
+				{
+					value : 58,
+					color: "#9D9B7F"
+				},
+				{
+					value : 82,
+					color: "#7D4F6D"
+				},
+				{
+					value : 8,
+					color: "#584A5E"
+				}
+			];
+			
+			window.onload = function(){				
+				var ctx = document.getElementById("myChart").getContext("2d");
+				new Chart(ctx).PolarArea(data);
+			}
+			
+		</script>
+	</head>
+
+	<body>
+		<canvas id="myChart" width="400" height="400"></canvas>
+	</body>
+</html>
