@@ -1,0 +1,1 @@
+uglifyjs index.js -m -o index.min.js

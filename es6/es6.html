@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+</head>
+<style>
+	.scale-border{
+		margin:10px auto;
+		height:100px;
+		position:relative;
+		padding:10px;
+		width: 200px;
+	}
+	.border{
+		-webkit-transform:scale(0.5);
+		transform:scale(0.5);
+		position:absolute;
+		border:1px solid #333;
+		top:-50%;
+		right:-50%;
+		bottom:-50%;
+		left:-50%;
+		border-radius: 10px;
+		background-color:#eee;
+	}
+</style>
+<body>
+𠮷
+<div id="result"></div>
+<div class="scale-border">
+	<div class="border"></div>
+</div>
+<script>
+	
+</script>
+	
+<script src="node_modules/babel-core/browser.js"></script>
+<script type="text/babel">
+</script>
+<script src="src/app1.js"></script>
+<script src="src/app2.js"></script>
+<script src="src/app3.js"></script>
+<script src="src/app4.js"></script>
+</body>
+</html>

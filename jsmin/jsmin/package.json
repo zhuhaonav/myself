@@ -1,0 +1,20 @@
+{
+  "name": "cyx",
+  "version": "1.0.0",
+  "description": "This is for study gulp project !",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/xxxx"
+  },
+  "author": {
+    "name": "cyx",
+    "email": "915976779@qq.com"
+  },
+  "license": "cyx",
+  "devDependencies": {
+    "browser-sync": "2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^1.5.3",
+  }
+}

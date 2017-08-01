@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>"樱"你而来</title>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+<!--<link type="text/css" rel="stylesheet" href="//css.40017.cn/cn/min/??/touch/app/pub/public/baseActivity.1.0.3.css"/>-->
+<link rel="stylesheet" href="//css.40017.cn/cn/min/??/touch/public/common/0.0.1/common.css">
+<link rel="stylesheet" type="text/css" href="//css.40017.cn/cn/min/??/touch/public/slider/0.0.1/slider.css?v=12"/>
+<style>
+    html{
+        background: #fff;
+    }
+    ul,li{
+        margin: 0;
+        padding: 0;
+    }
+    .content{
+        background: #fff;
+    }
+    #page {
+         margin: 0;
+    }
+    img{
+        width: 100%;
+        line-height: 0;
+    }
+    .header{
+        line-height: 0;
+    }
+    .tab_head{
+        height: 3rem;
+        width: 100%;
+        background: url(//img1.40017.cn/touch/pushcode/ahuhao/zhouyi/55_02.jpg) no-repeat;
+        background-size: 100%;
+    }
+    .tab_head li{
+        opacity: 0;
+        height: 3rem;
+        width: 50%;
+        float: left;
+        background: url(//img1.40017.cn/touch/pushcode/ahuhao/zhouyi/66_02.jpg) no-repeat;
+        background-size: 200%;
+        transition: 1s;
+        -webkit-transition: 1s;
+    }
+    .tab_head li:last-child{
+        background-position: 100% 0;
+    }
+    li.active{
+        opacity: 1;
+    }
+    .tab_con li{
+        box-shadow: 0 2px 3px #d3c5c8;
+        margin-top: 1rem;
+        height: 13.8rem;
+        line-height: 0;
+    }
+    .btn{
+        margin: 2rem auto;
+        width: 22rem;
+    }
+</style>
+<!--<link rel="stylesheet" href="../css/sibao.css?v=23232">-->
+<script>
+    function a() {
+        if (document.documentElement.clientWidth < 640) {
+            document.querySelector('html').style.fontSize = document.documentElement.clientWidth / 30 + 'px';
+            document.querySelector('body').style.fontSize = document.documentElement.clientWidth / 30 + 'px';
+        }
+        else {
+            document.querySelector('html').style.fontSize = 640 / 30 + 'px';
+        }
+    }
+    a();
+</script>
+<input type="hidden" value="78163843" name="refId" />
+<input type="hidden" value="10004" name="VrCode" />
+<input type="hidden" value="//m.yiqiyou.com" name="PageName" />
+<input type="hidden" value="0" id="memberLev"/>
+<!--<input type="hidden" name="eventLabel" value="q_1199">-->
+
+<div class="content">
+    <div class="header">
+        <img src="//img1.40017.cn/touch/pushcode/ahuhao/zhouyi/88_01.jpg" alt="">
+    </div>
+    <ul class="tab_head">
+        <li class="active"></li>
+        <li></li>
+    </ul>
+    <ul class="tab_con">
+    </ul>
+    <div class="btn"><img src="//img1.40017.cn/touch/pushcode/ahuhao/zhouyi/55_05.jpg" alt=""></div>
+</div>
+<!--分享内容-->
+<input id="shareTitle" name="tcsharetext" type="hidden" value='“樱”你而来，浪漫日韩游'>
+<input id="shareDes" name="tcDesc"  type="hidden" value="“樱”你而来，浪漫日韩游">
+<input id="shareUrl" name="tcshareurl" type="hidden" value="//m.17u.cn/client/General/AppAdverInfo/3471">
+<input id="shareImg" name="tcshareimg" type="hidden" value="//img1.40017.cn/touch/pushcode/ahuhao/zhouyi/88_01-min.jpg">
+
+<script src="//js.40017.cn/touch/pushcode/xinren/zepto.js"></script>
+<script type="text/javascript" src="//js.40017.cn/cn/min/??/touch/hb/c/bridge.2.1.6.js?v=2016091401"></script>
+<script src='//res.wx.qq.com/open/js/jweixin-1.0.0.js?v=201502111445' type="text/javascript"></script>
+<script>
+    var taref = window.location.href;
+    $("#shareUrl").attr("value", taref);
+
+    var orpt = $("#shareImg").val();
+    var rty = location.protocol;
+    if (orpt.indexOf("//") == 0) {
+        var odfp = rty + orpt;
+        $("#shareImg").val(odfp);
+    }
+</script>
+<script src="//js.40017.cn/touch/pushcode/ahuty/ybdb/shared.js" type="text/javascript"></script>
+<script src="//js.40017.cn/touch/public/location/0.0.6/location.js"></script>
+<script type="text/javascript" src="//js.40017.cn/cn/min/??/touch/public/common/0.7.1/common.js,/touch/hb/c/webp/webpjs.min.js,/touch/public/slider/0.0.1/slider.js,/touch/public/location/0.0.2/location.js,/touch/public/location/0.0.1/locationCity.js,/touch/public/page/0.0.2/page.js,/touch/c/des/city.js,/touch/public/autoComplete/0.0.1/autoComplete.js,/touch/hb/p/openApp.js?v=09061613"></script>
+<script type="text/javascript">
+    var _tcq = _tcq || [];
+    var _timediff = -1;
+    function getQueryString(url, key) {
+        var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)", "i");
+        url = decodeURIComponent(url);
+        var r = url.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+    var cc = getQueryString(window.location.search, 'refid') || "";
+    if (typeof _tcopentime != "undefined")
+    { _timediff = new Date().getTime() - _tcopentime; }
+    _tcq.push(['_serialid', '0']);
+    _tcq.push(['_vrcode', '10003-2000-0']);
+    _tcq.push(['_refId', getRefid(cc)]);
+    _tcq.push(['_userId', getMemberId()]);
+    _tcq.push(['_openTime', _timediff]);
+    _tcq.push(['_trackPageview', '']);
+    _tcq.push(['_qdid', getQdid()]);
+</script>
+<script type='text/javascript' src="//vstlog.17usoft.com/vst.ashx" charset="utf-8"></script>
+<script src="src/kamaJapan.js"></script>
+</body>
+</html>
