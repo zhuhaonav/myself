@@ -1,0 +1,12 @@
+.idea/
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+#NUNIT
+.builds
+*.log
+
+# Click-Once directory
+publish/
+node_modules
